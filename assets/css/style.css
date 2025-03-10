@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 25px 5%;
+}
+
+.nav-logo {
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo i {
+    font-size: 32px;
+    padding: 0px 10px;
+}
+
+/* Hiệu ứng text chạy màu */
+.nav-logo a {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 800;
+    color: #000;
+    background: linear-gradient(90deg, #5b58eb, #bb63ff, #56e1e9, #112c71, #0a2353);
+    background-size: 200% 200%; /* Kích thước lớn để màu có thể di chuyển */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Ẩn màu gốc của chữ */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover: Kích hoạt animation */
+.nav-logo a:hover {
+    animation: textGradientMove 1.5s linear infinite; /* Chạy màu liên tục */
+}
+
+/* Keyframes để di chuyển màu */
+@keyframes textGradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 10px 15px;
+    background: linear-gradient(to left, #5b58eb, #bb63ff, #56e1e9, #112c71, #0a2353);
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links a{
+    position: relative;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 2px 0px;
+}
+
+.nav-links a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+.icons,
+.user{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.icons i,
+.user i{
+    font-size: 25px;
+}
+
+
+.icons .user {
+    background-color: #fff;
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 10px 15px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 20px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hiệu ứng viền gradient động */
+.icons .user::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 50px;
+    padding: 2px;
+    background: linear-gradient(90deg, #5b58eb, #bb63ff, #56e1e9, #112c71, #0a2353);
+    background-size: 200% 200%; /* Giúp màu chạy */
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover: Hiện viền và kích hoạt hiệu ứng chạy màu */
+.icons .user:hover::after {
+    opacity: 1;
+    animation: gradientAnimation 2s linear infinite; /* Chạy màu liên tục */
+}
+
+/* Keyframes để chạy màu gradient */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
+/* main */
+
+/* section-des */
+.des{
+    position: relative;
+}
+
+.des-img{
+    width: 100%;
+    
+}
+
+.des-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+    text-align: center;
+    margin: 0px auto;
+    color: #fff;
+    font-size: 16px;
+}
+
+.des-text .heading-des{
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.search-form{
+    position: absolute;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    bottom: -3%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px 15px;
+    border-radius: 10px;
+    gap: 10px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);;
+}
+
+.box-form{
+    border-radius: 10px;
+}
+
+.search-input{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    background-color: #e6e6e6;
+}
+
+.box-search{
+    display: flex;
+    align-items: center;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.box-search i{
+    color: #757575;
+}
+
+.search-btn{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 0px 15px;
+    gap: 10px;
+    border: 2px solid;
+    background-color: #8e28ae;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* section treding */
+
+.trending{
+    margin-top: 10%;
+}
