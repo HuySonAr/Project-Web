@@ -239,6 +239,65 @@ nav{
 
 /* section treding */
 
-.trending{
-    margin-top: 10%;
+.trending {
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content-trending{
+    width: 500px;
+}
+
+.content-trending h2{
+    font-size: 32px;
+}
+
+.content-trending h2,p{
+    margin: 16px 0px;
+}
+
+.cards-container{
+    display: flex;
+    padding: 50px;
+}
+
+.card-top,
+.card-bottom{
+    display: flex;
+}
+
+.card{
+    position: relative;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 170px;
+    height: 240px;
+    margin: 16px;
+}
+
+.highlight{
+    width: 355px;
+    height: auto;
+}
+
+.highlight .text-card{
+    width: 100%;
+    padding: 0;
+    margin-bottom: 16px;
+    font-size: 21px;
+}
+
+.text-card{
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 10px;
+    bottom: 0;
 }
