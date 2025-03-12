@@ -12,6 +12,7 @@ header{
     top: 0;
     background-color: #fff;
     z-index: 1;
+    width: 100%;
 }
 
 nav{
@@ -26,32 +27,29 @@ nav{
     color: #000;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
-.nav-logo i {
-    font-size: 32px;
-    padding: 0px 10px;
-}
-
-/* Hiệu ứng text chạy màu */
+/* Thiết lập hiệu ứng text gradient */
+.nav-logo i,
 .nav-logo a {
-    text-decoration: none;
     font-size: 32px;
     font-weight: 800;
-    color: #000;
+    padding: 0 5px;
+    text-decoration: none;
     background: linear-gradient(90deg, #5b58eb, #bb63ff, #56e1e9, #112c71, #0a2353);
-    background-size: 200% 200%; /* Kích thước lớn để màu có thể di chuyển */
+    background-size: 200% 200%;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Ẩn màu gốc của chữ */
+    -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
 }
 
-/* Hover: Kích hoạt animation */
-.nav-logo a:hover {
-    animation: textGradientMove 1.5s linear infinite; /* Chạy màu liên tục */
+
+.nav-logo:hover * {
+    animation: textGradientMove 1.5s linear infinite;
 }
 
-/* Keyframes để di chuyển màu */
+/* Keyframes cho hiệu ứng gradient chạy */
 @keyframes textGradientMove {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -59,12 +57,14 @@ nav{
 }
 
 
+
 .nav-links{
     list-style: none;
     display: flex;
     gap: 2rem;
     padding: 10px 15px;
-    background: linear-gradient(to left, #5b58eb, #bb63ff, #56e1e9, #112c71, #0a2353);
+    /* background: linear-gradient(to left, #5b58eb, #bb63ff, #56e1e9, #112c71, #0a2353); */
+    background-color: #8e28b0;
     border-radius: 50px;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
@@ -104,6 +104,8 @@ nav{
 .icons i,
 .user i{
     font-size: 25px;
+    color: #8e28b0;
+    cursor: pointer;
 }
 
 
@@ -112,46 +114,12 @@ nav{
     border: 2px solid;
     border-radius: 50px;
     padding: 10px 15px;
-    color: #000;
+    color: #8e28b0;
     font-weight: 600;
     cursor: pointer;
     margin-left: 20px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
 }
 
-/* Hiệu ứng viền gradient động */
-.icons .user::after {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border-radius: 50px;
-    padding: 2px;
-    background: linear-gradient(90deg, #5b58eb, #bb63ff, #56e1e9, #112c71, #0a2353);
-    background-size: 200% 200%; /* Giúp màu chạy */
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask-composite: exclude;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-/* Hover: Hiện viền và kích hoạt hiệu ứng chạy màu */
-.icons .user:hover::after {
-    opacity: 1;
-    animation: gradientAnimation 2s linear infinite; /* Chạy màu liên tục */
-}
-
-/* Keyframes để chạy màu gradient */
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
 
 
 
@@ -232,7 +200,7 @@ nav{
     padding: 0px 15px;
     gap: 10px;
     border: 2px solid;
-    background-color: #8e28ae;
+    background-color: #8e28b0;
     color: #fff;
     cursor: pointer;
 }
@@ -252,13 +220,7 @@ nav{
 }
 
 
-.content-trending{
-    width: 500px;
-}
 
-.content-trending h2{
-    font-size: 32px;
-}
 
 
 .cards-container{
@@ -318,6 +280,7 @@ nav{
 }
 .content-heading p{
     margin: 15px 0px;
+    opacity: 0.6;
 }
 
 .list-boxs{
@@ -339,7 +302,7 @@ nav{
 }
 
 .box .box-img{
-    background-color: bisque;
+    background: url(/assets/img/book.jpg) center/cover no-repeat;
     width: 100%;
     height: 140px;
     border-radius: 10px;
@@ -387,7 +350,7 @@ nav{
 .avata{
     width: 37px;
     height: 37px;
-    background-color: bisque;
+    background: url(/assets/img/avatar2.jpg) center/cover no-repeat;
     margin: 0px 10px;
     border-radius: 50%;
 }
@@ -396,4 +359,15 @@ nav{
 
     font-size: 14px;
     opacity: 0.5;
+}
+
+.btn-view-more button{
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: #8e28b0;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    outline: none;
 }
