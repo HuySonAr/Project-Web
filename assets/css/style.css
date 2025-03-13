@@ -267,6 +267,147 @@ nav{
 
 
 
+
+/* Best-Seller */
+/* head */
+
+.container-seller{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+}
+
+.container-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-head .title-container{
+    font-weight: 800;
+}
+
+.container-head .btn-view{
+    font-size: 14px;
+    color: #8e28b0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+/* mid */
+
+.container-mid{
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+}
+.book-slider{
+    display: flex;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.box-book{
+    min-width: 33.33%;
+    display: flex;
+    /* box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5); */
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.box-book .box-left{
+    width: 50%;
+    background: url(/assets/img/wild.jpg) center/cover no-repeat;
+    border-radius: 10px;
+}
+
+.box-book .box-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-right .des-box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.des-box .book-genre{
+    text-decoration: none;
+    color: #8e28b0;
+    background-color: #eddff6;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.des-box .rating{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 10px 15px;
+    color: #ff7c00;
+    background-color: #fdd782;
+    border-radius: 10px;
+}
+
+.note-box{
+    padding: 20px 0px;
+    flex-grow: 1;
+}
+
+.note-box .content-book{
+    line-height: 1.2;
+}
+
+.note-box .method-book{
+    opacity: 0.75;
+    margin-top: 10px;
+}
+
+.price-box{
+    font-weight: 900;
+    font-size: 22px;
+    color: #8e28b0;
+    padding-bottom: 2rem;
+}
+
+.container-foot{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 55%;
+    left: 3.5rem;
+    right: 3.5rem;
+}
+
+.container-foot .btn-seller{
+    background-color: #8e28b0;
+    color: #fff;
+    font-size: 16px;
+    width: 37px;
+    height: 37px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container-foot .btn-seller:hover{
+    background-color: #eddff6;
+    color: #8e28b0;
+}
+
+
+
+
+
+
+
 /* LetestNews */
 .LetestNews{
     display: flex;

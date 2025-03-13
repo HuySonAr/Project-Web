@@ -16,3 +16,25 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+let currentIndex = 0;
+const books = document.querySelector('.book-slider');
+const totalBooks = document.querySelectorAll('.box-book').length;
+const boxesPerView = 3;
+
+document.querySelectorAll('.btn-seller').forEach(button => {
+    button.addEventListener('click', () => {
+        if (button.querySelector('.fa-arrow-left')) {
+            // Nhấn nút trái
+            currentIndex = Math.max(currentIndex - 1, 0); // Không cho nhỏ hơn 0
+        } else {
+            // Nhấn nút phải
+            currentIndex = Math.min(currentIndex + 1, totalBooks - boxesPerView); // Không cho vượt quá giới hạn
+        }
+
+        // Cập nhật vị trí cuộn
+        const offset = -currentIndex * (100 / boxesPerView); // Tính toán offset
+        books.style.transform = `translateX(${offset}%)`;
+    });
+});
