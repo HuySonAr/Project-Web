@@ -1,0 +1,31 @@
+/* Lobster Two || Londrina Solid || Madimi One */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Londrina+Solid:wght@100;300;400;900&family=Madimi+One&family=Roboto:wght@100..900&display=swap');
+
+/* Font Mervale Script */
+@font-face {
+    font-family: 'Mervale Script';
+    src: url('/assets/fonts/mervale-script/mervale-script.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #F8BF2C;
+    --white-color: #fff;
+    --black-color: #000;
+    --font-Mervale-Script: 'Mervale Script';
+    --font-Lobster-Two: 'Lobster Two';
+    --font-Londrina-Solid: 'Londrina Solid';
+    --font-Madimi-One: 'Madimi One';
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
