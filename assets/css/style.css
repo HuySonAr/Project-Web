@@ -13,3 +13,98 @@ h3{
 h4{
     font-family: var(--font-Madimi-One);
 }
+
+/* Dịnh dạng chung */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Section 1: Banner */
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%) blur(2px); /* Giảm độ sáng và làm mờ */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.text-overlay h1 {
+    font-size: 60px;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    color: #ffcc66;
+}
+
+.text-overlay h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Section 2: Chefs */
+.section_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: white;
+    color: #000;
+}
+
+.section_2 img {
+    width: 40%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.content {
+    width: 50%;
+}
+
+.content h1 {
+    font-size: 40px;
+    color: #ffcc66;
+    margin: 0;
+}
+
+.content h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc66;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #e0a850;
+}
