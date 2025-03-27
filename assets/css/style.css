@@ -197,4 +197,85 @@ h2 span {
 .image img {
   width: 100%;
   border-radius: 20px;
+  /* No selection provided, adding a general improvement to the CSS code */
+
+  /* Normalize box-sizing property */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Add a universal font family */
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  /* Improve header styles */
+  .header {
+    display: flex;
+    height: 82px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Enhance hero section styles */
+  .hero {
+    width: 100%;
+    height: 85vh;
+    display: block;
+    background-image: url("/assets/imgs/anh1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* Improve our story section styles */
+  .our-story {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: #f9f9f9;
+  }
+
+  .text {
+    max-width: 100%;
+    text-align: center;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: bold;
+  }
+
+  /* Add media queries for responsiveness */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero {
+      height: 60vh;
+    }
+
+    .our-story {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
