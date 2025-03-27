@@ -26,6 +26,15 @@
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-Londrina-Solid), sans-serif;
     box-sizing: border-box;
+}
+
+
+/* grip */
+
+.grip{
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
 }
