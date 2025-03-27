@@ -1,15 +1,200 @@
-h1{
-    font-family: var(--font-Mervale-Script), sans-serif;
+h1 {
+  font-family: var(--font-Mervale-Script), sans-serif;
 }
 
-h2{
-    font-family: var(--font-Lobster-Two), sans-serif;
+h2 {
+  font-family: var(--font-Lobster-Two), sans-serif;
 }
 
-h3{
-    font-family: var(--font-Londrina-Solid), sans-serif;
+h3 {
+  font-family: var(--font-Londrina-Solid), sans-serif;
 }
 
-h4{
-    font-family: var(--font-Madimi-One);
+h4 {
+  font-family: var(--font-Madimi-One);
+}
+.header {
+  display: flex;
+  height: 82px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #000;
+  color: #fff;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: left;
+  flex: 2;
+  gap: 10px;
+}
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  flex: 1;
+}
+.icons-group {
+  display: 20px;
+  gap: 5px;
+}
+
+.icons-group i {
+  font-size: 24px;
+  color: #ffffff;
+  transition: 0.3s ease;
+  padding: 5px;
+}
+
+.icons-group i:hover {
+  color: #ffd700;
+}
+.header__navbar {
+  display: flex;
+  gap: 5px;
+  margin-right: 5px;
+  font-family: "Madimi One", sans-serif;
+}
+
+.header__navbar a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.header__navbar a:hover {
+  background-color: #ffd700;
+  color: black;
+}
+
+.btn-table {
+  background-color: #ffd700;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  font-family: "Madimi One", sans-serif;
+  font-size: 14px;
+}
+
+.btn-table:hover {
+  background-color: #ffc107;
+}
+
+.hero {
+  width: 99hw;
+  height: 85vh;
+  display: block;
+  background-image: url("/assets/imgs/anh1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  padding: auto;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: bold;
+}
+.hero-text h1 {
+  font-family: "Mervale Script";
+  font-size: 71px;
+  color: #fd7a00;
+  margin-bottom: 30px;
+}
+
+.hero-text p {
+  margin-top: 10px;
+  color: #ffff;
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.our-story {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 100px;
+  background-color: #f9f9f9;
+}
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.text {
+  max-width: 100%;
+  text-align: center;
+  padding-right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: bold;
+}
+
+.text h2 {
+  font-size: 71px;
+  margin-bottom: 20px;
+  font-family: "Madimi One", sans-serif;
+}
+
+.text span {
+  margin-top: 40px;
+  font-family: "Londrina Solid", sans-serif;
+
+  color: #000000;
+}
+h2 span {
+  color: #ffd700;
+  display: block; /* Đảm bảo xuống dòng */
+  margin-top: 10px; /* Thêm khoảng cách giữa Discover và Our Story */
+}
+.text p {
+  margin-top: 40px;
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 900;
+  color: #787878;
+  font-family: "Londrina Solid", sans-serif;
+}
+
+.btn-recipes {
+  background-color: #f7be2d;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: "Madimi One";
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffff;
+}
+
+.image {
+  max-width: 80%;
+}
+.image img {
+  width: 100%;
+  border-radius: 20px;
 }
