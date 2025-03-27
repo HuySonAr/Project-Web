@@ -17,6 +17,7 @@
     --font-Lobster-Two: 'Lobster Two';
     --font-Londrina-Solid: 'Londrina Solid';
     --font-Madimi-One: 'Madimi One';
+    --text-color: #777;
 }
 
 * {
@@ -37,4 +38,18 @@ html {
     width: 1100px;
     max-width: 100%;
     margin: 0 auto;
+}
+
+/* btn */
+.btn{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-family: var(--font-Madimi-One);
+    border: none;
+    font-size: 1.4rem;
+    padding: 16px 30px;
+    max-width: 190px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
