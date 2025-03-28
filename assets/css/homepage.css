@@ -171,6 +171,7 @@
 .section2-box-left__heading{
     font-size: 5rem;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .section2-box-left__des{
@@ -261,6 +262,7 @@
 .section4-box-right__heading{
     font-size: 5rem;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .section4-box-right__des{
@@ -286,4 +288,73 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.section5-box{
+    max-width: 600px;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 80px;
+}
+
+.section5-box__content{
+    font-family: var(--font-Mervale-Script);
+    font-size: 7rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.section5-box__title{
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.section5-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu-wraper{
+    padding: 0 21px;
+}
+
+.menu-box{
+    text-align: left;
+    max-width: 280px;
+}
+
+.menu-box-content{
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+}
+
+.menu-box-content__title{
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.menu-box-content__dot{
+    
+}
+
+.menu-box-content__price{
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.menu-box__title{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin: 8px 0 50px 0;
+}
+
+
+.section5-box__btn{
+
 }
