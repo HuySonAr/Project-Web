@@ -1,44 +1,11 @@
 /* section 1 */
-.section1{
-    position: relative;
+.section1-box{
+    text-align: left;
 }
 
-.section1__img{
-    height: 630px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.section1-text{
-    position: absolute;
-    top: 30%;
-    left: 50px;
-}
-
-.section1-text__content{
-    font-family: var(--font-Mervale-Script);
-    font-size: 7.2rem;
-    color: var(--primary-color);
-    font-weight: 500;
-    text-align: center;
-}
-
-.section1-text__title{
-    text-align: center;
-}
-
-.title__start{
-    font-family: var(--font-Londrina-Solid);
-    font-size: 5rem;
-    color: var(--white-color);
-    margin: 20px 0;
-}
-.title__end{
-    font-family: var(--font-Lobster-Two);
-    font-size: 1.8rem;
-    color: var(--white-color);
-    margin: 0;
+.section1-content__des::before{
+    left: 0;
+    transform: translateX(0%);
 }
 
 /* section 2 */
