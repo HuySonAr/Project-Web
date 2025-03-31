@@ -1,0 +1,167 @@
+/* Section Reservation */
+.reservation {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+.reservation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+.reservation-image img:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.reservation-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.reservation-content {
+    flex: 1;
+    text-align: center;
+}
+
+.reservation-title {
+    font-size: 4rem;
+    color: #f4b400;
+    margin-bottom: 10px;
+}
+
+.reservation-subtitle {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.reservation-description {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Form đặt chỗ */
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    gap: 20px;
+}
+
+.form-input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #f4b400;
+}
+
+/* Nút đặt chỗ */
+.reservation-btn {
+    background-color: #f4b400;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 auto;/* Center*/
+}
+.reservation-btn:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+
+
+/* Section Relaxing Atmosphere */
+.relaxing-atmosphere {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.relaxing-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.relaxing-container img:hover {
+    transform: scale(1.05); /* Phóng to nhẹ */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng đổ bóng */
+}
+
+.relaxing-content {
+    flex: 1;
+    text-align: center;
+}
+
+.relaxing-title {
+    font-size: 3rem;
+    color: #f4b400;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.relaxing-title .highlight {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #f4b400;
+    line-height: 1.2;
+}
+
+.relaxing-description {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Nút See Gallery */
+.relaxing-btn {
+    background-color: #f4b400;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.relaxing-btn:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+/* Hình ảnh bên phải */
+.relaxing-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
