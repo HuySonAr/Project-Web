@@ -1,0 +1,89 @@
+/* Định dạng contact-container */
+.contact-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Điều chỉnh dựa trên hình, có thể tăng nếu cần */
+  width: 100%;
+  margin: 0 auto; /* Căn giữa container */
+  border: 1px solid #ccc; /* Thêm viền như trong hình */
+}
+
+/* Định dạng tiêu đề và đoạn văn */
+.contact-container h1 {
+  font-size: 2.5em;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact-container p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Bố cục form với hai cột */
+form {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-bottom: 20px;
+}
+
+.form-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.form-left,
+.form-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 60%;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+  height: 40px; /* Chiều cao cố định cho input */
+}
+
+.form-group textarea {
+  height: 150px; /* Điều chỉnh chiều cao để khớp với hình */
+  resize: none;
+}
+
+button {
+  background-color: #f4a261; /* Màu vàng cam như trong hình */
+  color: #fff;
+  border: none;
+  padding: 12px 30px; /* Tăng padding để button to hơn */
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200%; /* Độ rộng cố định cho button */
+  margin: 0 auto; /* Căn giữa button */
+  display: block; /* Đảm bảo button căn giữa */
+}
+
+button:hover {
+  background-color: #e07a5f;
+}
+
+/* Điều chỉnh section5 để chứa contact-container */
+.section5 {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  width: 100%;
+}

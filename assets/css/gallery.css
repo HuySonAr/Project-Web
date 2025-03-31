@@ -1,0 +1,40 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px; /* Tăng khoảng cách giữa các ô */
+  max-width: 1200px; /* Tăng chiều rộng tối đa để hình ảnh có không gian hơn */
+  margin: 30px auto; /* Căn giữa và thêm margin */
+  padding: 20px; /* Thêm padding cho container */
+}
+
+.grid-item {
+  border: 1px solid #e0e0e0; /* Viền mỏng và nhẹ */
+  border-radius: 10px; /* Bo góc cho ô */
+  overflow: hidden; /* Ẩn phần dư thừa của hình ảnh */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+  transition: transform 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.grid-item:hover {
+  transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%; /* Đảm bảo hình ảnh lấp đầy ô */
+  object-fit: cover; /* Cắt hình ảnh để giữ tỷ lệ, tránh méo */
+  display: block;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cột trên màn hình nhỏ */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 cột trên màn hình rất nhỏ */
+  }
+}
