@@ -1,167 +1,96 @@
-/* Section Reservation */
-.reservation {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
+.section2{
+    padding: 90px 0;
+    background-color: #ddd;
 }
 
-.reservation-container {
+.section2-box{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-
-    transition: background-color 0.3s ease, transform 0.2s ease;
-
-}
-.reservation-image img:hover {
-    transform: scale(1.03); 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    justify-content: center;
+    padding: 16px 0;
 }
 
-.reservation-image img {
+.section2-item{
+    width: calc(100% / 2);
+    padding: 0 15px;
+}
+
+.section2-picture{
+    height: 370px;
+    overflow: hidden;
+}
+
+.section2-picture__img{
     width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
 }
 
-.reservation-content {
-    flex: 1;
+.section2-wrapper{
     text-align: center;
 }
 
-.reservation-title {
-    font-size: 4rem;
-    color: #f4b400;
-    margin-bottom: 10px;
+.section2-wrapper-content__heading{
+    font-family: var(--font-Mervale-Script);
+    font-size: 7rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    line-height: 50px;
+    margin: 0;
 }
 
-.reservation-subtitle {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
+.section2-wrapper-content__text{
+    font-size: 5rem;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin: 20px 0 30px;
 }
 
-.reservation-description {
-    font-size: 1.5rem;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 30px;
+.section2-wrapper-content__des{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 0 0 50px;
+    line-height: 24px;
 }
 
-/* Form đặt chỗ */
-.reservation-form {
+
+.section2-wrapper-form{
+    display: flex;
+    font-family: var(--font-Lobster-Two);
+}
+
+.form-info{
+    width: calc(100% / 2);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    padding: 0 15px;
 }
 
-.form-group {
-    display: flex;
-    gap: 20px;
+
+.form-info__text{
+    height: 50px;
+    font-size: 1.4rem;
+    padding-left: 2%;
+    color: var(--text-color);
 }
 
-.form-input {
-    flex: 1;
-    padding: 10px 15px;
-    font-size: 1.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.form-info__text:nth-child(2){
+    margin: 30px 0;
 }
 
-.form-input:focus {
+.form-info__text:focus{
     outline: none;
-    border-color: #f4b400;
+    border: 2px solid var(--primary-color);
 }
 
-/* Nút đặt chỗ */
-.reservation-btn {
-    background-color: #f4b400;
-    color: #fff;
-    padding: 15px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin: 0 auto;/* Center*/
-}
-.reservation-btn:hover {
-    background-color: #e0a800;
-    transform: scale(1.05);
+.section2-wrapper-button{
+    padding: 20px 15px 0;
 }
 
-
-
-/* Section Relaxing Atmosphere */
-.relaxing-atmosphere {
-    background-color: #fff;
-    padding: 50px 20px;
-}
-
-.relaxing-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-.relaxing-container img:hover {
-    transform: scale(1.05); /* Phóng to nhẹ */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng đổ bóng */
-}
-
-.relaxing-content {
-    flex: 1;
-    text-align: center;
-}
-
-.relaxing-title {
-    font-size: 3rem;
-    color: #f4b400;
-    margin-bottom: 10px;
-    line-height: 1.2;
-}
-
-.relaxing-title .highlight {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #f4b400;
-    line-height: 1.2;
-}
-
-.relaxing-description {
-    font-size: 1.5rem;
-    color: #666;
-    line-height: 1.8;
-    margin-bottom: 30px;
-}
-
-/* Nút See Gallery */
-.relaxing-btn {
-    background-color: #f4b400;
-    color: #fff;
-    padding: 15px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-.relaxing-btn:hover {
-    background-color: #e0a800;
-    transform: scale(1.05);
-}
-
-/* Hình ảnh bên phải */
-.relaxing-image img {
+.section2-wrapper-button__book{
+    max-width: none;
     width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
-    object-fit: cover;
 }
